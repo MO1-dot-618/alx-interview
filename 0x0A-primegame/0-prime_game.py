@@ -38,10 +38,10 @@ def isWinner(x, nums):
     ben = 0
 
     for num in nums:
-        if len(get_primes(range(num) + 1)) % 2 == 0:
-            ben++
+        if len(get_primes(range(1, num + 1))) % 2 == 1:
+            maria += 1
         else:
-            maira++
+            ben += 1
 
     if maria > ben:
         return "Maria"
@@ -49,7 +49,3 @@ def isWinner(x, nums):
         return "Ben"
     else:
         return None
-    
-
-
-
